@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.T.L.A.S - Adaptive Threat Logging & Agent System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>A.T.L.A.S</h1>
+            <p>Adaptive Threat Logging & Agent System</p>
+        </div>
+    </header>
 
+    <main>
+        <div class="panel-container">
+            <!-- Summarizer Agent Panel -->
+            <div class="panel">
+                <div class="panel-header">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="panel-title">
+                        <h2>Summarizer Agent</h2>
+                        <p>Condenses and extracts key information from security data</p>
+                    </div>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-messages" id="summarizer-messages">
+                        <!-- Chat messages will appear here -->
+                    </div>
+                    <div class="chat-input">
+                        <textarea placeholder="Type your message here..."></textarea>
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analysis & Visualization Agent Panel -->
+            <div class="panel">
+                <div class="panel-header">
+                    <i class="fas fa-chart-network"></i>
+                    <div class="panel-title">
+                        <h2>Analysis & Visualization Agent</h2>
+                        <p>Analyzes patterns and creates visual representations of security data</p>
+                    </div>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-messages" id="analysis-messages">
+                        <!-- Chat messages will appear here -->
+                    </div>
+                    <div class="chat-input">
+                        <textarea placeholder="Type your message here..."></textarea>
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Enrichment Agent Panel -->
+            <div class="panel">
+                <div class="panel-header">
+                    <i class="fas fa-database"></i>
+                    <div class="panel-title">
+                        <h2>Data Enrichment Agent</h2>
+                        <p>Adds context and additional data to security findings</p>
+                    </div>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-messages" id="enrichment-messages">
+                        <!-- Chat messages will appear here -->
+                    </div>
+                    <div class="chat-input">
+                        <textarea placeholder="Type your message here..."></textarea>
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
